@@ -51,12 +51,12 @@ h1 {
 }
 
 .contentOnImage {
-   color: white;
+   color:white;
    font: bold Okra, Helvetica, sans-serif;
    font-size: 30px;
-   max-width: 73%;
+   max-width: 70%;
    background: rgb(0, 0, 0);
    background: rgba(0, 0, 0, 0.4);
    padding: 10px;
-   align-content: flex-end;
+   align-content: flex-start;
 }

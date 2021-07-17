@@ -5,6 +5,7 @@ import foodImage from '../resources/foodimage.jpg';
 import hungerImage from '../resources/hunger2.jpg';
 import '../styling/CarouselImage.css';
 import {Button, makeStyles} from '@material-ui/core';
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles(() => ({
     button: {
@@ -28,11 +29,14 @@ export default function ImageCarousel() {
         >
             <div class="image">
                 <img src={foodImage} alt="FoodImage" />
+                
                 <div class="contentOnImage">
                     <h2>
+                    <Box component="span" sx={{ p: 2, bgcolor:"black" }}>
                         <span>Just had a party? About to dispose leftover food??
                             Wait!!
                         </span>
+                    </Box>
                     </h2>
                     <br />
                 </div>
@@ -40,13 +44,15 @@ export default function ImageCarousel() {
             <div class="image">                
                 <div class="">
                 <img src={hungerImage} alt="HungryKids" />
-                    <div class="contentOnImage">
-                    
+                    <div class="contentOnImage">                    
                     <h2>
+                    <Box component="span" sx={{ p: 0.2, bgcolor:"black" }}>
                         <span>
-                            That food can feed at least some from huge list of 19 crore people in India sleep hungry every day!!
+                            That food can feed at least some from huge list of 19 crore people in India who sleep hungry every day!!
                         </span>
+                        </Box>
                     </h2>
+                    
                     <Button
                         href="/donatefood"
                         className = {button}
